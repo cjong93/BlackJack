@@ -1,23 +1,18 @@
 class Chips():
+
     def __init__(self):
         self.total = 100
         self.bet = 0
 
+    def __str__(self):
+        return str(f"You currently have {self.total} number of chips")
+
     def win_bet(self):
-        pass
+        print(f"Congradulations, you win {self.bet} number of chips!")
+        self.total += self.bet
+        print(f'Your balance is now {self.total}')
 
     def lose_bet(self):
-        pass
-<<<<<<< HEAD
-
-    def test(self):
-        pass
-        
-    def test2(self):
-        pass
-
-=======
-        
->>>>>>> c176302c5a4d00091c51244342c26f0e278f2195
-    def test3(self):
-        pass
+        print(f"Aww, you lost {self.bet} number of chips!")
+        self.total -= self.bet
+        print(f'Your balance is now {self.total}')
