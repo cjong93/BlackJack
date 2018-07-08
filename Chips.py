@@ -14,3 +14,6 @@ class Chips():
         
     def test2(self):
         pass
+
+    def test3(self):
+        pass
