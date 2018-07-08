@@ -8,4 +8,7 @@ class Chips():
 
     def lose_bet(self):
         pass
+
+    def test(self):
+        pass
         
